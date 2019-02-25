@@ -323,13 +323,13 @@ class DiceBot
   end
   
   def getD66(isSwap)
-    number = bcdice.getD66(isSwap)
+    number = @@bcdice.getD66(isSwap)
   end
   
   # D66 ロール用（スワップ、たとえば出目が【６，４】なら「６４」ではなく「４６」とする
   def get_table_by_d66_swap(table)
     isSwap = true
-    number = bcdice.getD66(isSwap)
+    number = @@bcdice.getD66(isSwap)
     return get_table_by_number(number, table), number
   end
   
