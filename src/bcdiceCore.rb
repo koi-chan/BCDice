@@ -357,10 +357,10 @@ class BCDice
     return unless( isMaster() )
     
     return unless( /(\d+)/  =~ @tnick )
-    @diceBot.upplerRollThreshold = $1.to_i
+    @diceBot.upperRollThreshold = $1.to_i
     
-    if( @diceBot.upplerRollThreshold > 0 )
-      sendMessageToChannels("上方無限ロールを#{@diceBot.upplerRollThreshold}以上に設定しました")
+    if( @diceBot.upperRollThreshold > 0 )
+      sendMessageToChannels("上方無限ロールを#{@diceBot.upperRollThreshold}以上に設定しました")
     else
       sendMessageToChannels("上方無限ロールの閾値設定を解除しました")
     end

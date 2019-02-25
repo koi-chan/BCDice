@@ -5,7 +5,7 @@ class ShadowRun < DiceBot
   def initialize
     super
     @sortType = 3
-    @upplerRollThreshold = 6
+    @upperRollThreshold = 6
     @unlimitedRollDiceType = 6
   end
   def gameName

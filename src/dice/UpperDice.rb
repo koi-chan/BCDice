@@ -115,10 +115,10 @@ class UpperDice
       return target2.to_i
     end
     
-    if(@diceBot.upplerRollThreshold == "Max")
+    if(@diceBot.upperRollThreshold == "Max")
       return 2
     else 
-      return @diceBot.upplerRollThreshold;
+      return @diceBot.upperRollThreshold;
     end
   end
   
@@ -141,7 +141,7 @@ class UpperDice
     diceCommands.each do |diceCommand|
       diceCount, diceMax = diceCommand.split(/[uU]/).collect{|s|s.to_i}
       
-      if( @diceBot.upplerRollThreshold == "Max" )
+      if( @diceBot.upperRollThreshold == "Max" )
         @upper = diceMax;
       end
       
