@@ -20,7 +20,7 @@ class TestDiceBotPrefixesCompatibility < Test::Unit::TestCase
       end
 
       # 従来の方法で接頭辞を設定する
-      def prefixs
+      def prefixes
         ['KD\d+>=\d+']
       end
     }

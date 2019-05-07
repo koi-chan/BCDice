@@ -69,11 +69,11 @@ class DiceBot
     
     @gameType = 'DiceBot'
 
-    if !prefixs.empty? && self.class.prefixes.empty?
-      # 従来の方法（#prefixs）で接頭辞を設定していた場合でも
+    if !prefixes.empty? && self.class.prefixes.empty?
+      # 従来の方法（#prefixes）で接頭辞を設定していた場合でも
       # クラス側に接頭辞が設定されるようにする
-      $stderr.puts("#{gameType}: #prefixs is deprecated. Please use .setPrefixes.")
-      self.class.setPrefixes(prefixs)
+      $stderr.puts("#{gameType}: #prefixes is deprecated. Please use .setPrefixes.")
+      self.class.setPrefixes(prefixes)
     end
   end
   
@@ -96,7 +96,7 @@ class DiceBot
     {
       'name' => gameName,
       'gameType' => gameType,
-      'prefixs' => self.class.prefixes,
+      'prefixes' => self.class.prefixes,
       'info' => getHelpMessage,
     }
   end
@@ -112,7 +112,7 @@ class DiceBot
   end
 
   # @deprecated 代わりに {#prefixes} を使ってください
-  alias prefixs prefixes
+  alias prefixes prefixes
 
   attr_reader :gameType
   
