@@ -642,7 +642,7 @@ class BCDice
     executeCard
     
     unless( @isMessagePrinted ) # ダイスロール以外の発言では捨てダイス処理を
-      # rand 100 if($isRollVoidDiceAtAnyRecive)
+      # rand 100 if($isRollVoidDiceAtAnyReceive)
     end
     
     debug("\non_public end")
