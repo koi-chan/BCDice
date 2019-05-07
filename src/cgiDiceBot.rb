@@ -120,7 +120,7 @@ class CgiDiceBot
     channel = ""
     nick_e = ""
     bcdice.setChannel(channel)
-    bcdice.recievePublicMessage(nick_e)
+    bcdice.receivePublicMessage(nick_e)
     
     rollResult = @rollResult
     @rollResult = ""

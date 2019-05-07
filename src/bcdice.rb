@@ -43,7 +43,7 @@ def mainBcDiceCli(args)
   bcdice.setMessage(message)
   channel = ""
   bcdice.setChannel(channel)
-  bcdice.recievePublicMessage(gameType)
+  bcdice.receivePublicMessage(gameType)
 end
 
 

@@ -33,7 +33,7 @@ class TestPointer < Test::Unit::TestCase
     @bcdice.setChannel( channel )
     
     nick ||= @nick
-    @bcdice.recievePublicMessage( nick )
+    @bcdice.receivePublicMessage( nick )
   end
   
   def test_setPoinChangePoinAndOpen

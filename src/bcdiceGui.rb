@@ -400,8 +400,8 @@ class BCDiceDialog < Wx::Dialog
     tnick = ""
     bcdice.setMessage(arg)
     bcdice.setChannel(channel)
-    # bcdice.recieveMessage(nick_e, tnick)
-    bcdice.recievePublicMessage(nick_e)
+    # bcdice.receiveMessage(nick_e, tnick)
+    bcdice.receivePublicMessage(nick_e)
   end
   
   def sendMessage(to, message)

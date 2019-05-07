@@ -171,9 +171,9 @@ class BCDice
     @message = @messageOriginal
   end
   
-  def recieveMessage(nick_e, tnick)
+  def receiveMessage(nick_e, tnick)
     begin
-      recieveMessageCatched(nick_e, tnick)
+      receiveMessageCatched(nick_e, tnick)
     rescue => e
       printErrorMessage(e)
     end
@@ -183,8 +183,8 @@ class BCDice
     sendMessageToOnlySender("error " + e.to_s + $@.join("\n"))
   end
   
-  def recieveMessageCatched(nick_e, tnick)
-    debug('recieveMessage nick_e, tnick', nick_e, tnick)
+  def receiveMessageCatched(nick_e, tnick)
+    debug('receiveMessage nick_e, tnick', nick_e, tnick)
     
     @nick_e = nick_e
     @cardTrader.setTnick( @nick_e )
@@ -588,18 +588,18 @@ class BCDice
     @channel = channel
   end
   
-  def recievePublicMessage(nick_e)
+  def receivePublicMessage(nick_e)
     begin
-      recievePublicMessageCatched(nick_e)
+      receivePublicMessageCatched(nick_e)
     rescue => e
       printErrorMessage(e)
     end
   end
   
-  def recievePublicMessageCatched(nick_e)
-    debug("recievePublicMessageCatched begin nick_e", nick_e)
-    debug("recievePublicMessageCatched @channel", @channel)
-    debug("recievePublicMessageCatched @message", @message)
+  def receivePublicMessageCatched(nick_e)
+    debug("receivePublicMessageCatched begin nick_e", nick_e)
+    debug("receivePublicMessageCatched @channel", @channel)
+    debug("receivePublicMessageCatched @message", @message)
     
     @nick_e = nick_e
     

@@ -129,7 +129,7 @@ class IrcClient < Net::IRC::Client
     bcdice = newBcDice()
     bcdice.setMessage(arg)
     bcdice.setChannel(channel)
-    bcdice.recieveMessage(nick_e, tnick)
+    bcdice.receiveMessage(nick_e, tnick)
   end
   
   def on_privmsg(event)
@@ -159,7 +159,7 @@ class IrcClient < Net::IRC::Client
     bcdice = newBcDice()
     bcdice.setMessage(arg)
     bcdice.setChannel(channel)
-    bcdice.recievePublicMessage(nick_e)
+    bcdice.receivePublicMessage(nick_e)
   end
   
   def getNickEFromEvent(event)

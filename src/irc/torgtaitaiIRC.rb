@@ -93,16 +93,16 @@ class TorgtaitaiIRC
     @bcdice.setGameByTitle(gameType)
   end
   
-  def recieveMessage
-    # @bcdice.recieveMessage('nick_e', 'tnick', message)
+  def receiveMessage
+    # @bcdice.receiveMessage('nick_e', 'tnick', message)
     @bcdice.setChannel('channel')
-    @bcdice.recieveMessage('', '')
+    @bcdice.receiveMessage('', '')
   end
   
-  def recievePublicMessage
-    # @bcdice.recievePublicMessage('nick_e', message)
+  def receivePublicMessage
+    # @bcdice.receivePublicMessage('nick_e', message)
     @bcdice.setChannel('channel')
-    @bcdice.recievePublicMessage('')
+    @bcdice.receivePublicMessage('')
   end
   
   def setMessage(message)
